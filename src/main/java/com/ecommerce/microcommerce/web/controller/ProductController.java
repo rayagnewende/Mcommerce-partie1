@@ -9,6 +9,7 @@ import com.fasterxml.jackson.databind.ser.impl.SimpleFilterProvider;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.json.MappingJacksonValue;
 import org.springframework.web.bind.annotation.*;
@@ -16,6 +17,8 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import javax.validation.Valid;
 import java.net.URI;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -120,6 +123,16 @@ public class ProductController {
     		hm.put(p, marge);
     	}
     	return hm; 
+    }
+    
+    // tri des produits par ordre alphabetique 
+    
+    @GetMapping(value="/AdminTri")
+    public List<Product> trierProduitsParOrdreAlphabetique(){
+ 
+    	return productDao.findByOrderByNomAsc(); 
+    	
+    	
     }
 
 
