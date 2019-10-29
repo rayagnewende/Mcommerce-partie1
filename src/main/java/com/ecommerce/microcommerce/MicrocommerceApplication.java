@@ -1,4 +1,4 @@
-package com.ecommerce.microcommerce;
+package com.ecommerce.microcommerce; 
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
