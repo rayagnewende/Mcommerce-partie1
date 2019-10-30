@@ -1,0 +1,197 @@
+{
+	"id": "9824064b-f1a1-4e04-b0d3-ae7181752040",
+	"name": "CollectionPourLeMicroserviceDesProduits",
+	"allTests": [],
+	"timestamp": "2019-10-30T14:10:36.338Z",
+	"collection_id": "09132261-a3c5-4f8e-9395-a2437a4a804f",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "0",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "09132261-a3c5-4f8e-9395-a2437a4a804f",
+		"name": "CollectionPourLeMicroserviceDesProduits",
+		"order": [
+			"b5bfdcd7-c22a-4902-a34a-fdb1fd35ce69",
+			"4b150d58-15dd-418e-b818-f1545178311d",
+			"1a2cbc1d-f0e3-4201-8037-452931169f15",
+			"743414b7-19c6-4cf6-9663-273b753d90b4"
+		],
+		"folders_order": [],
+		"isFavorite": false
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [],
+	"results": [
+		{
+			"name": "Affichage de la marge ",
+			"id": "b5bfdcd7-c22a-4902-a34a-fdb1fd35ce69",
+			"url": "http://localhost:9090/AdminProduits",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"27"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "27",
+			"totalRequestTime": "27",
+			"iterationResults": {}
+		},
+		{
+			"name": "Tri par odre alphabétique ",
+			"id": "4b150d58-15dd-418e-b818-f1545178311d",
+			"url": "http://localhost:9090/TriProduits",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"23"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "23",
+			"totalRequestTime": "23",
+			"iterationResults": {}
+		},
+		{
+			"name": "Validation du prix de vente avec un prix =0",
+			"id": "1a2cbc1d-f0e3-4201-8037-452931169f15",
+			"url": "http://localhost:9090/Produits",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"25"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "25",
+			"totalRequestTime": "25",
+			"iterationResults": {}
+		},
+		{
+			"name": "Validation du prix de vente avec un prix correct ",
+			"id": "743414b7-19c6-4cf6-9663-273b753d90b4",
+			"url": "http://localhost:9090/Produits",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"20"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "20",
+			"totalRequestTime": "20",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 0,
+	"totalFail": 0,
+	"totalTime": 95,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "Affichage de la marge ",
+			"id": "b5bfdcd7-c22a-4902-a34a-fdb1fd35ce69",
+			"url": "http://localhost:9090/AdminProduits",
+			"time": "2019-10-30T14:10:36.338Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "Tri par odre alphabétique ",
+			"id": "4b150d58-15dd-418e-b818-f1545178311d",
+			"url": "http://localhost:9090/TriProduits",
+			"time": "2019-10-30T14:10:36.338Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "Validation du prix de vente avec un prix =0",
+			"id": "1a2cbc1d-f0e3-4201-8037-452931169f15",
+			"url": "http://localhost:9090/Produits",
+			"time": "2019-10-30T14:10:36.338Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "Validation du prix de vente avec un prix correct ",
+			"id": "743414b7-19c6-4cf6-9663-273b753d90b4",
+			"url": "http://localhost:9090/Produits",
+			"time": "2019-10-30T14:10:36.338Z",
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"testPassFailCounts": {}
+		}
+	],
+	"synced": false
+}

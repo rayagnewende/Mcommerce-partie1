@@ -133,7 +133,7 @@ public class ProductController {
     
     // tri des produits par ordre alphabetique 
     
-    @GetMapping(value="/AdminTri")
+    @GetMapping(value="/TriProduits")
     public List<Product> trierProduitsParOrdreAlphabetique(){
  
     	return productDao.findByOrderByNomAsc(); 
